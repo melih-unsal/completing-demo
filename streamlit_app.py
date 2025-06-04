@@ -8,6 +8,12 @@ import streamlit as st
 # Add API key input to sidebar
 st.sidebar.title("Configuration")
 api_key = st.sidebar.text_input("Enter your OpenAI API key", type="password")
+st.sidebar.markdown("""
+If you don't have an OpenAI API key, you can get one by:
+1. Going to [OpenAI's website](https://platform.openai.com/account/api-keys)
+2. Creating an account or signing in
+3. Clicking on "Create new secret key"
+""")
 
 if not api_key:
     st.warning("Please enter your OpenAI API key in the sidebar to continue.")
