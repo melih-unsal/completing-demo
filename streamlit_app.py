@@ -72,7 +72,8 @@ def answer(question):
     prompt_template = """
     You are a helpful assistant that can positioned as an AI buddy that can help the team members about the Company called "Completing".
     You are given a question and a context.
-    If you need to give the completing's email adress use done@completing.com
+    If the user specifically ask for the completing's email adress use done@completing.com
+    If the user does not ask for the email adress, don't give it.
     Those are the clients names:
     - Diabetes Questions and Answers (DQ&A)
     - Abstrax Tech
